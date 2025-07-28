@@ -687,6 +687,12 @@ blockquote cite {
     gap: 3rem;
 }
 
+.contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 60px 0;
+}
 .contact-form-container {
     background-color: white;
     padding: 2rem;
@@ -731,6 +737,49 @@ blockquote cite {
     font-size: 0.875rem;
     color: var(--accent-color);
     height: 1rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12 px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+button.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.btn:hover {
+    background: #333;
 }
 
 .info-item {
